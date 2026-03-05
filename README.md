@@ -66,12 +66,26 @@ Each node shows: `type [on relation] cost=start..total actual=Xms rows=actual/es
 
 ## MCP Server (Claude / Cursor)
 
+After installing globally (`npm install -g @indiekitai/pg-explain`):
+
+```json
+{
+  "mcpServers": {
+    "pg-explain": {
+      "command": "pg-explain-mcp"
+    }
+  }
+}
+```
+
+Or without global install:
+
 ```json
 {
   "mcpServers": {
     "pg-explain": {
       "command": "npx",
-      "args": ["-y", "@indiekitai/pg-explain-mcp"]
+      "args": ["--package", "@indiekitai/pg-explain", "pg-explain-mcp"]
     }
   }
 }

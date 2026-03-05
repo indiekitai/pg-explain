@@ -1,6 +1,6 @@
 {
   "name": "@indiekitai/pg-explain",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostgreSQL EXPLAIN ANALYZE in your terminal. The only CLI/MCP alternative to web-based visualizers.",
   "type": "module",
   "main": "./dist/index.js",
@@ -14,10 +14,21 @@
     "test": "node --test dist/__tests__/analyzer.test.js",
     "prepublishOnly": "npm run build && npm test"
   },
-  "keywords": ["postgres", "postgresql", "explain", "query", "performance", "mcp", "cli"],
+  "keywords": [
+    "postgres",
+    "postgresql",
+    "explain",
+    "query",
+    "performance",
+    "mcp",
+    "cli"
+  ],
   "author": "IndieKit <hello@indiekit.ai>",
   "license": "MIT",
-  "repository": { "type": "git", "url": "https://github.com/indiekitai/pg-explain" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/indiekitai/pg-explain"
+  },
   "dependencies": {
     "pg": "^8.0.0",
     "chalk": "^5.0.0",
